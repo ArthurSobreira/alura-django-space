@@ -1,5 +1,9 @@
 {% extends 'gallery/base.html' %}
 {% load static %}
+<head>
+    <title>{% block title %}Home Page{% endblock %}</title>
+</head>
+<body>
 {% block main_content %}
     <div class="pagina-inicial">
         <header class="cabecalho">
@@ -146,3 +150,4 @@
         <p class="rodape__texto">Desenvolvido por Alura</p>
     </footer>
 {% endblock %}
+</body>
