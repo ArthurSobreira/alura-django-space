@@ -13,7 +13,11 @@
     <link rel="stylesheet" href="{% static 'styles/style.css' %}">
 </head>
 <body>
-    {% block main_content %}{% endblock %}
-    {% include 'gallery/partials/_footer.html' %}
+    <div class="pagina-inicial">
+        {% block main_content %}{% endblock %}
+    </div>
+    <footer class="rodape">
+        {% include 'gallery/partials/_footer.html' %}
+    </footer>
 </body>
 </html>
