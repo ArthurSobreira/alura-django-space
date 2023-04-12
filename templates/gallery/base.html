@@ -14,7 +14,12 @@
 </head>
 <body>
     <div class="pagina-inicial">
-        {% block main_content %}{% endblock %}
+        <header class="cabecalho">
+            {% include 'gallery/partials/_header.html' %}
+        </header>
+        <main class="principal">
+            {% block main_content %}{% endblock %}
+        </main>
     </div>
     <footer class="rodape">
         {% include 'gallery/partials/_footer.html' %}
